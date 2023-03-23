@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Céu de Brigas</title>
+    <title>Login Céu de Brigas</title>
     <style>
         * {
             margin: 0;
@@ -58,7 +58,7 @@
         }
 
         button:hover {
-            background: rgba(1208, 211, 11, 0.8);
+            background: #c59826;
         }
 
         input:focus {
@@ -111,25 +111,21 @@
 
 <body>
     <div class="wrapper">
-        <h1>Registro</h1>
+        <h1>Login</h1>
         <form action="#">
-            <input type="text" placeholder="Usuário">
-            <input type="text" placeholder="CPF">
+            <input type=" text" placeholder="Usuário">
             <input type="password" placeholder="Senha">
-            <input type="password" placeholder="Reescreva Senha">
+            <div class="recover">
+                <a href="#">Esqueceu a Senha?</a>
+            </div>
         </form>
-        <div class="terms">
-            <input type="checkbox" id="checkbox">
-            <label for="checkbox">Eu concordo com os <a href="#">Termos & Condições</a></label>
-        </div>
-        <button>Registre-se</button>
+        <button>Login</button>
         <div class="member">
-            Já é Cadastrado? <a href="./login.html">
-                Faça seu Login
+            Não tem Registro? <a href="./registro.html">
+                Registre-se
             </a>
         </div>
     </div>
-    <div class="termos"></div>
 
 </body>
 
