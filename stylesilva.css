@@ -818,3 +818,22 @@ footer .end span{
     background: #fac031;
     border-radius: 15px;
 }
+.member{
+
+    font-size: 0.8rem;
+
+    margin-top: 1.4rem;
+
+    color: #636363;
+
+    
+
+}
+
+.member a{
+
+    color: #fac031
+
+    text-decoration: none;
+
+}
