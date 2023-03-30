@@ -560,7 +560,7 @@ section .main_btn:hover i{
 
 /*Order*/
 
-.order{
+.registro{
     width: 100%;
     height: 100vh;
     padding: 70px 0;
@@ -569,7 +569,7 @@ section .main_btn:hover i{
     background-position: center;
 }
 
-.order h1{
+.registro h1{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -577,13 +577,13 @@ section .main_btn:hover i{
     font-size: 55px;
 }
 
-.order h1 span{
+.registro h1 span{
     color: #fac031;
     margin-right: 15px;
     font-family: mv boli;
 }
 
-.order h1 span::after{
+.registro h1 span::after{
     content: '';
     width: 100%;
     height: 2px;
@@ -593,31 +593,31 @@ section .main_btn:hover i{
     bottom: 15px;
 }
 
-.order .order_main{
+.registro .registro_main{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.order .order_main .order_image img{
+.registro .registro_main .registro_image img{
     width: 600px;
 }
 
-.order .order_main form{
+.registro .registro_main form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0 10px;
 }
 
-.order .order_main form .input p{
+.registro .registro_main form .input p{
     line-height: 25px;
 }
 
-.order .order_main form .input{
+.registro .registro_main form .input{
     margin: 5px;
 }
 
-.order .order_main form .input input{
+.registro .registro_main form .input input{
     width: 300px;
     height: 35px;
     padding: 0 10px;
@@ -627,11 +627,11 @@ section .main_btn:hover i{
     border-radius: 3px;
 }
 
-.order .order_main form .input input:focus{
+.registro .registro_main form .input input:focus{
     border: 2px solid #fac031;
 }
 
-.order .order_main form .order_btn{
+.registro .registro_main form .registro_btn{
     padding: 10px 0;
     background: #fac031;
     color: white;
