@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #fac031;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+section h2{
+    color: #ffff;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label{
+    color: #ffff;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+form input:focus{
+    border-radius: 16px;
+}
+
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+form textarea:focus{
+    border-radius: 16px;
+}
+
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover{
+    background: #fff;
+    border-radius: 16px;
+}
+
+
+/* pagina Obrigado */
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fac031;
+    flex-direction: column;
+}
+
+.text{
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.paragrafo{
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.btn{
+    padding: 15px 55px;
+    background: #fff;
+    text-decoration: none;
+    color: #fac031;
+    font-size: 18px;
+    transition: all 0.5;
+}
+
+.btn:hover{
+    border-radius: 16px;
+}
