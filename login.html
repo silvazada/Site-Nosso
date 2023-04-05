@@ -45,7 +45,7 @@
             background: #e4e4e4;
         }
 
-        button {
+        .botao {
             font-size: 1rem;
             margin-top: 1.8rem;
             padding: 10px 0;
@@ -58,7 +58,7 @@
             background: #fac031;
         }
 
-        button:hover {
+        .botao:hover {
             background: #c59827;
         }
 
@@ -113,14 +113,14 @@
 <body>
     <div class="wrapper">
         <h1>Login</h1>
-        <form action="#">
-            <input type=" text" placeholder="Usuário">
-            <input type="password" placeholder="Senha">
+        <form action="cadastros.php" method="post">
+            <input type=" text" placeholder="Usuário" name="login">
+            <input type="password" placeholder="Senha" name="senha">
             <div class="recover">
                 <a href=".//recsenha.html">Esqueceu a Senha?</a>
             </div>
+            <input type="submit" value="Login" class="botao">
         </form>
-        <a href=".//index.html#"><button>Login</button></a>
         <div class="member">
             Não tem Registro? <a href=".//index.html#Registro">
                 Registre-se
