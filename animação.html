@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Inicial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        *{
+            animation: bounceInUp 2s;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #111111;
+            z-index: 2;
+
+        }
+        .aglomero{
+            display: inline-flex;
+            z-index: 2;
+
+        }
+        .aglomero .estatico{
+            color: #ffff;
+            font-size: 35px;
+            font-weight: 400;
+            z-index: 2;
+        }
+        .aglomero .dinamico{
+            margin-left: 15px;
+            line-height: 40px;
+            height: 40px;
+            overflow: hidden;
+            z-index: 2;
+        }
+        .dinamico li{
+            color: #fc6d6d;
+            list-style: none;
+            font-size: 35px;
+            font-weight: 500;
+            left: 0;
+            position: relative;
+            animation: slide 6s steps(1) ;
+            z-index: 2;
+        }
+        @keyframes slide{
+            100%{
+                top: -360px;
+            }
+        }
+        .dinamico li span::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            border-left: 2px solid #fc6d6d;
+            animation: typing 1.5s steps(10) infinite;
+            background: #111111;
+            z-index: 2;
+        }
+        .dinamico li span{
+            position: relative;
+        }
+        @keyframes typing{
+            100%{
+                left: 100%;
+                margin: 0 -35px 0 35px;
+            }
+        }
+        .carregando{
+
+            animation: zoomInDown 2s;
+            height: 30px;
+            width: 30px;
+            top: 53vh;
+            position: absolute;
+            z-index: 2;
+            
+        }
+        .brigas{
+            z-index: 1;
+            position: absolute;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <div class="aglomero">  
+        <div class="estatico">Céu de </div>
+        <ul class="dinamico">
+            <li><span>Brigadeiro</span></li>
+        </ul>
+    </div>
+    <img src="image/carrega.gif" img class="carregando">
+    <img src="image/brigas.png" img class="brigas">
+</body>
+</html>

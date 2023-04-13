@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5%;
+    height: 85px;
+}
+
+.menuesquerda {
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menudireita {
+    display: flex;
+    align-items: center;
+
+}
+
+.line {
+    height: 1px;
+    background-color: #ddd;
+    width: 90%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 85px);
+}
+.itens{
+    align-self: center;
+}
+.ladoesquerdo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.imagem {
+    max-width: 500px;
+}
+
+.imagem img {
+    width: 75%;
+}
+
+.ladodireito {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ladodireito h6{
+    color: #fac031;
+}
+.ladodireito p{
+    color: black;
+    font-size: 14px;
+}
+.preco{
+   font-size: 10px;
+   font-weight: 700; 
+}
+.mais img{
+    width: 20px;
+}
+.menos img{
+    width: 20px;
+}
+.carrinho img{
+    width: 20px;
+}

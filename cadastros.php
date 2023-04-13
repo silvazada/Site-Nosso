@@ -12,7 +12,6 @@
         $senha= $_POST["senha"];
 
         echo($login);
-        echo("<br>");
         echo($senha);
     ?>
 </body>
