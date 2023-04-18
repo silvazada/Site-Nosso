@@ -95,3 +95,6 @@ nav ul li a {
 .carrinho img{
     width: 20px;
 }
+.carrinho a{
+    color: black;
+}
