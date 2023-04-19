@@ -71,7 +71,25 @@
     border: 2px solid #fac031;
 }
 
-.registro .registro_main form .registro_btn{
+.registro .registro_main form .inserir_btn{
+    padding: 10px 0;
+    background: #fac031;
+    color: white;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.registro .registro_main form .excluir_btn{
+    padding: 10px 0;
+    background: #fac031;
+    color: white;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.registro .registro_main form .alterar_btn{
     padding: 10px 0;
     background: #fac031;
     color: white;
@@ -84,4 +102,5 @@
     height: 30px;
     width: 30px;
     margin-left: 200px;
+    margin-top: -55px;
 }
