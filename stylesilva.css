@@ -423,6 +423,8 @@ section .main_btn:hover i{
 
 
 
+
+
 /*Team*/
 
 .team{
@@ -542,6 +544,11 @@ footer{
     width: 100%;
     padding: 30px 0 0 20px;
     background: #eeeeee;
+}
+
+.footer_tag a{
+    text-decoration: none;
+    color: #000;
 }
 
 footer .footer_main{

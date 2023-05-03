@@ -23,55 +23,51 @@
 
         <div class="registro_main">
 
-            <div class="registro_image">
-                <img src="image/motoboy.png">
-            </div>
-
-            <img class="lupa" src="image/lupa.svg">
-
-            <form action="#">
+            <form action="adm.php" method="post">
 
                 <div class="input">
                     <p>CPF</p>
-                    <input type="text" placeholder="CPF">
+                    <input type="text" placeholder="CPF" name="CPF">
                 </div>
 
                 <div class="input">
                     <p>Email</p>
-                    <input type="email" placeholder="seu email">
+                    <input type="email" placeholder="seu email" name="Email">
                 </div>
 
                 <div class="input">
                     <p>Usuário</p>
-                    <input type="text" placeholder="seu usuário">
-                </div>
-
-                <div class="input">
-                    <p></p>
-                    <input type="text" placeholder="seu CEP">
+                    <input type="text" placeholder="seu usuário" name="Usuario">
                 </div>
 
                 <div class="input">
                     <p>Senha</p>
-                    <input type="text" placeholder="sua senha">
+                    <input type="text" placeholder="sua senha" name="Senha">
                 </div>
 
                 <div class="input">
-                    <p>Repita Senha</p>
-                    <input type="text" placeholder="repita sua senha">
+                    <p>ID Usuário</p>
+                    <input type="text" placeholder="ID Usuário" name="id_cadastro">
                 </div>
 
-            <div class="botao1">
-                <input type="submit" class="excluir_btn" value="Excluir">
-            </div>
+                <div class="input">
+                    <p>CEP</p>
+                    <input type="text" placeholder="CEP" name="CEP">
+                </div>
 
-            <div class="botao2">
-                <input type="submit" class="alterar_btn" value="Alterar">
-            </div>
+                <div class="botao1">
+                    <input type="submit" class="excluir_btn" value="Excluir" name="Excluir">
+                </div>
 
-            <div class="botao3">
-                <input type="submit" class="inserir_btn" value="Inserir">
-            </div>
+                <div class="botao2">
+                    <input type="submit" class="alterar_btn" value="Alterar" name="Alterar">
+                </div>
+
+                <div class="botao3">
+                    <input type="submit" class="pesquisar_btn" value="Pesquisar" name="Pesquisar">
+                </div>
+
+
 
             </form>
 
