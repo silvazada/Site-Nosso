@@ -2,11 +2,11 @@
 
     include("conecta.php");
     
-    $cpf = $_POST["CPF"];
-    $email = $_POST["Email"];
-    $usuario = $_POST["Usuario"];
-    $senha = $_POST["Senha"];
-    $cep = $_POST["CEP"];
+    $cpf = $_POST["cpf"];
+    $email = $_POST["email"];
+    $usuario = $_POST["usuario"];
+    $senha = $_POST["senha"];
+    $cep = $_POST["cep"];
     $id_cadastro = $_POST["id_cadastro"];
 
     if(isset($_POST["Excluir"]))
@@ -17,7 +17,7 @@
     }
     if(isset($_POST["Alterar"]))
     {
-    $comando = $pdo->prepare("UPDATE cadastros SET CPF='$cpf', Email='$email', Usuario='$usuario', Senha='$senha', CEP='$cep' WHERE id_cadastro=$id_cadastro");
+    $comando = $pdo->prepare("UPDATE cadastros SET cpf='$cpf', email='$email', usuario='$usuario', senha='$senha', cep='$cep' WHERE id_cadastro=$id_cadastro");
     $resultado = $comando->execute();
     header("Location: cadastro_adm.html");
     }

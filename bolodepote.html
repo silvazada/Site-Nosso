@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Milkshake - Céu de Brigadeiro</title>
+
+
+  <link rel="stylesheet" href="milkshake.css">
+  <link rel="icon" type="image/png" href="image/logo2.png">
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <div class="menuesquerda">
+        <nav>
+          <ul>
+            <li><a href="estrutura.html">Inicio</a></li>
+            <li><a href="estrutura.html#Menu">Produtos</a></li>
+            <li><a href="fale_conosco.html">Fale Conosco</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="menudireita">
+      <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    <div class="line"></div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="ladoesquerdo">
+          <div class="itens">
+            <div class="imagem">
+              <img src="image/bolopote.jpg">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="ladodireito">
+          <h6>Céu de Brigadeiro</h6>
+          <h1>Bolo de Pote</h1>
+          <p>Apresentamos os nossos incríveis Bolos de Pote, uma explosão de sabor em cada camada! Prepare-se para uma experiência culinária única e irresistível!</p>
+          <span class="preco">R$ 12,00</span>
+          <div class="opcoes">
+            <div class="quantidade">
+              <div class="menos">
+                <img onclick="diminuir()" src="image/menos.svg">
+              </div>
+              <span id="qtde">0</span>
+              <div class="mais">
+                <img onclick="somar()" src="image/mais.svg">
+              </div>
+            </div>
+            <div class="carrinho">
+              <a href="carrinho2.html" class="butao"><img src="image/carrinho.svg">Adicionar ao Carrinho</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    function diminuir(){
+      qtde.innerHTML = parseInt(qtde.innerHTML) - 1
+    }
+
+
+    function somar() {
+      qtde.innerHTML = parseInt(qtde.innerHTML) + 1
+    }
+  </script>
+
+</body>
+
+</html>

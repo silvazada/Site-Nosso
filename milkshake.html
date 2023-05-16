@@ -18,8 +18,8 @@
       <div class="menuesquerda">
         <nav>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html#Menu">Produtos</a></li>
+            <li><a href="estrutura.html">Inicio</a></li>
+            <li><a href="estrutura.html#Menu">Produtos</a></li>
             <li><a href="fale_conosco.html">Fale Conosco</a></li>
           </ul>
         </nav>
@@ -47,7 +47,8 @@
         <div class="ladodireito">
           <h6>Céu de Brigadeiro</h6>
           <h1>Milkshake</h1>
-          <p>O milkshake é uma deliciosa bebida cremosa feita com sorvete e leite, perfeita para refrescar em dias
+          <p>O milkshake é uma deliciosa bebida cremosa feita com sorvete de chocolate e leite, perfeita para refrescar
+            em dias
             quentes ou para saborear como sobremesa. Nosso milkshake é feito com ingredientes de alta qualidade,
             incluindo sorvete premium e leite fresco. Com uma textura suave e um sabor incrível, o nosso milkshake é uma
             escolha indulgente e deliciosa para qualquer ocasião. Faça o seu pedido agora e experimente um dos melhores
@@ -56,21 +57,32 @@
           <div class="opcoes">
             <div class="quantidade">
               <div class="menos">
-                <img src="image/menos.svg">
+                <img onclick="diminuir()" src="image/menos.svg">
               </div>
-              <span>0</span>
+              <span id="qtde">0</span>
               <div class="mais">
-                <img src="image/mais.svg">
+                <img onclick="somar()" src="image/mais.svg">
               </div>
             </div>
             <div class="carrinho">
-              <a href="" class="butao"><img src="image/carrinho.svg">Adicionar ao Carrinho</a>
+              <a href="carrinho.html" class="butao"><img src="image/carrinho.svg">Adicionar ao Carrinho</a>
             </div>
           </div>
         </div>
       </div>
     </section>
   </main>
+  <script>
+    function diminuir(){
+      qtde.innerHTML = parseInt(qtde.innerHTML) - 1
+    }
+
+
+    function somar() {
+      qtde.innerHTML = parseInt(qtde.innerHTML) + 1
+    }
+  </script>
+
 </body>
 
 </html>
