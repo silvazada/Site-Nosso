@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="carrinho.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div class="page-title">CARRINHO</div>
+    <div class="content">
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Preço</th>
+              <th>Quantidade</th>
+              <th>Total</th>
+              <th>-</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="product">
+                  <img src="image/coxinhamorango.png">
+                  <div class="info">
+                    <div class="name">Coxinha Doce</div>
+                    <div class="category">Chocolate</div>
+                  </div>
+                </div>
+              </td>
+              <td>R$ <span id="precoprod">10.00</span></td>
+              <td>
+                <div class="qty">
+                  <button onclick="diminuir();"><i class="bx bx-minus"></i></button>
+                  <span id="qtde">2</span>
+                  <button onclick="somar();"><i class="bx bx-plus"></i></button>
+                </div>
+              </td>
+              <td width="80px">R$<span id="total">20.00</span></td>
+              <td>
+                <button class="remove"><i class="bx bx-x"></i></button>
+              </td>
+            </tr>
+            <script>
+
+              function diminuir() {
+
+                if (qtde.innerHTML > "0") {
+                  qtde.innerHTML -= 1
+                  t = parseFloat(precoprod.innerHTML) * qtde.innerHTML
+                  t = t.toFixed(2)
+                  total.innerHTML = t
+                  subtotal.innerHTML = t
+                  total2.innerHTML = t
+                }
+              }
+
+
+              function somar() {
+                qtde.innerHTML = parseInt(qtde.innerHTML) + 1
+                t = parseFloat(precoprod.innerHTML) * qtde.innerHTML
+                t = t.toFixed(2)
+                total.innerHTML = t
+                subtotal.innerHTML = t
+                total2.innerHTML = t
+              }
+
+
+            </script>
+          </tbody>
+        </table>
+      </section>
+      <aside>
+        <div class="box">
+          <header>Resumo da compra</header>
+          <div class="info">
+            <div><span>Sub-total</span>R$<span id="subtotal"> 20.00</span></div>
+            <div><span>Frete</span><span>Gratuito</span></div>
+          </div>
+          <footer>
+            <span>Total</span>
+            R$<span id="total2"> 20.00</span>
+          </footer>
+        </div>
+        <button>Finalizar Compra</button>
+      </aside>
+    </div>
+  </main>
+</body>
+
+</html>
