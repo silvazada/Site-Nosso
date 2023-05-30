@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela ADM</title>
+    <link rel="stylesheet" href="adm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="image/logo2.png">
+</head>
+
+<body>
+
+    <!--Registro-->
+
+
+    <div class="registro" id="Registro">
+        <h1><span>Cadastro Produtos</span></h1>
+
+        <div class="registro_main">
+
+            <form action="produtos.php" method="post">
+
+                <div class="input">
+                    <p>ID do Produto</p>
+                    <input type="text" placeholder="ID do Produto" name="id_prod">
+                </div>
+
+                <div class="input">
+                    <p>Nome do Produto</p>
+                    <input type="varchar" placeholder="Nome do Produto" name="nome_prod">
+                </div>
+
+                <div class="input">
+                    <p>Fabricante do Produto</p>
+                    <input type="varchar" placeholder="Fabricante do Produto" name="fabricante_prod">
+                </div>
+
+                <div class="input">
+                    <p>Data de Validade</p>
+                    <input type="varchar" placeholder="Validade do Produto" name="validade_prod">
+                </div>
+
+                <div class="input">
+                    <p>Descrição</p>
+                    <input type="text" placeholder="Descrição do Produto" name="desc_prod">
+                </div>
+
+                <div class="input">
+                    <p>Valor</p>
+                    <input type="text" placeholder="Valor Do Produto" name="valor_prod">
+                </div>
+
+                <div class="botao1">
+                    <input type="submit" class="excluir_btn" value="Excluir" name="Excluir">
+                </div>
+
+                <div class="botao2">
+                    <input type="submit" class="alterar_btn" value="Alterar" name="Alterar">
+                </div>
+
+                <div class="botao3">
+                    <input type="submit" class="pesquisar_btn" value="Pesquisar" name="Pesquisar">
+                </div>
+
+                <div class="botao4">
+                    <input type="submit" class="inserir_btn" value="Inserir" name="Inserir">
+                </div>
+
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

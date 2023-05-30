@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5%;
+    height: 85px;
+}
+
+.menuesquerda {
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menudireita {
+    display: flex;
+    align-items: center;
+
+}
+
+.line {
+    height: 1px;
+    background-color: #ddd;
+    width: 90%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: calc(100vh - 85px);
+}
+.itens{
+    align-self: center;
+}
+.ladoesquerdo {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.imagem {
+    max-width: 700px;
+}
+
+.imagem img {
+    width: 94%;
+}
+
+.ladodireito {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.ladodireito h6{
+    color: #fac031;
+}
+.ladodireito p{
+    color: black;
+    font-size: 16px;
+}
+.preco{
+   font-size: 28px;
+   font-weight: 700; 
+}
+.mais img{
+    width: 20px;
+}
+.menos img{
+    width: 20px;
+}
+.carrinho img{
+    width: 20px;
+}
+.carrinho a{
+    color: black;
+}
+span{
+    margin-left: 5px;
+}
+.opcoes{
+    display: flex;
+    gap: 15px;
+}
+
+.quantidade{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #ededed;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.quantidade span{
+    font-weight: 700;
+    font-size: 16px;
+}
+.menos, .mais{
+    cursor: pointer;
+}
+.butao{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #fac031;
+    padding: 10px 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 13px;
+}
+p{
+    text-align: justify;
+    line-height: 25px;
+}
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
