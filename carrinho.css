@@ -431,3 +431,10 @@ aside > button:hover {
   border-radius: 5px;
 }
 /*# sourceMappingURL=styles.css.map */
+
+a .logou{
+  width: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
