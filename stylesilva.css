@@ -631,3 +631,9 @@ footer .end span{
     text-decoration: none;
 
 }
+
+.perfil{
+    position: absolute;
+    margin-top: -3px;
+    margin-left: 10px;
+}

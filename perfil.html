@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Perfil Céu de Brigas</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="image/logo2.png">
+	<style type="text/css" title="MeuEstilo" media="all">
+		* {
+			font-family: 'Ubuntu', sans-serif;
+		}
+
+		body {
+			background-color: #fff;
+			text-align: center;
+			margin: 25px;
+		}
+
+		.container {
+			background-color: #f1f1f1;
+			padding: 15px;
+			text-align: center;
+		}
+
+		h1 {
+			color: #fac031;
+		}
+
+		h2 {
+			color: #2E2E2E;
+			font-size: 14px;
+		}
+
+		.about h1 {
+			font-size: 16px;
+		}
+
+		.about p {
+			color: #fac031;
+			font-weight: 400;
+		}
+
+		.about {
+			padding: 30px;
+			margin: 30px;
+			background-color: #fff;
+			border-radius: 0%;
+			text-align: center;
+		}
+
+		img.avatar {
+			width: 200px;
+			border-radius: 10%;
+			transition: 0.5s;
+		}
+
+		img.ico {
+			width: 20px;
+			filter: grayscale(1);
+			transition: 0.5s;
+
+		}
+
+		img:hover {
+			filter: grayscale(0);
+			cursor: pointer;
+			border-radius: 50%;
+			box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+		}
+
+		.negrito {
+			font-weight: 700;
+		}
+
+		.pedidos{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.pedido {
+			border-radius: 10%;
+			transition: 0.5s;
+			height: 240px;
+			margin: 20px;
+		}
+
+		.volta{
+			width: 100%;
+			height: 30px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+	
+	</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="volta">
+			<a href="estrutura2.html"><img class="logou" src="image/volta.png" width="30px"></a>
+		</div>
+
+		<h1> Perfil </h1>
+		<img class="avatar" src="image/avatar.jpg" alt="Avatar">
+
+		<div class="about">
+			<h2>Ultimos Pedidos</h2>
+				<div class="pedidos">
+					<a href="milkshake.html"><img src="image/milkshake.jfif" class="pedido" width="270px"></a>
+					<a href="trufa.html"><img src="image/trufacupuaçu.jpg" class="pedido" width="270px"></a>
+				</div>
+		</div>
+
+		<div>
+			<h2>Informações</h2>
+
+			<span class="negrito">Nome:</span>
+			<p>Harry The Hawk</p>
+			<span class="negrito">Endereço:</span>
+			<p>1 State Farm Dr, Atlanta, GA 30303, Estados Unidos</p>
+
+
+
+			<img src="ico_insta.png" class="ico" />
+			<img src="ico_twitter.png" class="ico" />
+			<img src="ico_facebook.png" class="ico" />
+
+		</div>
+
+
+
+	</div>
+
+</body>
+
+</html>
