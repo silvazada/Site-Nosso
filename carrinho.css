@@ -243,12 +243,14 @@ table tbody tr td {
 
 
 .product {
+  display: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+      
 }
 
 
@@ -413,10 +415,10 @@ aside .box footer {
 }
 
 
-aside > button {
+aside > a button {
   border: 0;
   padding: 15px 0;
-  color: white;
+  color: #000;
   background: #fac031;
   display: block;
   width: 100%;
@@ -427,7 +429,7 @@ aside > button {
 }
 
 
-aside > button:hover {
+aside > a button:hover {
   border-radius: 5px;
 }
 /*# sourceMappingURL=styles.css.map */
