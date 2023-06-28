@@ -68,7 +68,7 @@ form textarea:focus{
     border-radius: 16px;
 }
 
-form button{
+form .menu_btn{
     padding: 15px;
     cursor: pointer;
     font-size: 16px;
@@ -77,9 +77,12 @@ form button{
     color: #fff;
     transition: all 1s;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-form button:hover{
+form .menu_btn:hover{
     background: #fff;
     border-radius: 16px;
 }
@@ -123,7 +126,7 @@ form button:hover{
     transition: all 0.8s;
 }
 
-.btn:hover{
+.menu_btn:hover .btn:hover{
     border-radius: 13px;
     background: #fac031;
     color: #ffffff;
